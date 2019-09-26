@@ -1,6 +1,7 @@
 package com.stackroute;
 
 import com.stackroute.demo.BeanLifecycleDemoBean;
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Movie;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -17,7 +18,10 @@ public class Main {
         System.out.println("Gender of the Actor is " + movie1.getActor1().getGender());
         System.out.println("Age of the Actor is " + movie1.getActor1().getAge());
 
-        BeanLifecycleDemoBean beanLifecycleDemoBean=context.getBean(BeanLifecycleDemoBean.class);
-        ((AbstractApplicationContext)context).registerShutdownHook();
+        //BeanLifecycleDemoBean beanLifecycleDemoBean=context.getBean(BeanLifecycleDemoBean.class);
+        //((AbstractApplicationContext)context).registerShutdownHook();
+
+        //BeanPostProcessorDemoBean beanPostProcessorDemoBean=context.getBean(BeanPostProcessorDemoBean.class);
+
     }
 }
