@@ -14,7 +14,5 @@ public class Main {
         System.out.println("Name of the Actor is " + movie1.getActor1().getName());
         System.out.println("Gender of the Actor is " + movie1.getActor1().getGender());
         System.out.println("Age of the Actor is " + movie1.getActor1().getAge());
-
-
     }
 }
