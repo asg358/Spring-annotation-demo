@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie
 {
+    @Autowired
     private Actor actor1;
 
     public Movie() {

@@ -8,17 +8,16 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
 
     @Bean
-    @Scope("prototype")
     public Movie getMovie(){
 
-        Movie movie=new Movie(getActor());
+        Movie movie=new Movie();
         return movie;
     }
 
     @Bean
     public Actor getActor(){
 
-        Actor actor=new Actor("Akshay KUmar","Male",50);
+        Actor actor=new Actor("Salman Khan","Male",54);
         return actor;
     }
 }
