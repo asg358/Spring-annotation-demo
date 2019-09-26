@@ -1,5 +1,6 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanLifecycleDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.Bean;
@@ -19,5 +20,11 @@ public class AppConfig {
 
         Actor actor=new Actor("Salman Khan","Male",54);
         return actor;
+    }
+
+    @Bean
+    public BeanLifecycleDemoBean getBeanLifeCycle(){
+        return new BeanLifecycleDemoBean();
+
     }
 }
